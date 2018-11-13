@@ -29,7 +29,8 @@ end
 lines = IO.readlines(file_path)
 line_no = find_node(lines, 2, 1, 0, yaml_path.split('.'))
 if line_no
-  puts "#{file_path}:#{line_no}: #{lines[line_no-1].chomp}"
+  # puts "#{file_path}:#{line_no}: #{lines[line_no-1].chomp}"
+  puts "#{lines[line_no-1].chomp}"
 else
-  puts "#{file_path}: not found."
+  die "Did not find yaml path in file."
 end

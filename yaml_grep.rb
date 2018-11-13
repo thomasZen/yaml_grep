@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 
 yaml_path = ARGV[0]
 file_path = ARGV[1]
